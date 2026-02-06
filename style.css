@@ -1,0 +1,34 @@
+body, html {
+    height: 100%;
+    margin: 10px;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+h1 {
+    font-size: 5rem; /* Big text */
+    font-weight: bold;
+}
+tr:nth-child(even) { 
+    background-color: #f2f2f2; 
+}
+tr:hover { 
+    background-color: #e9ecef; 
+}
+table {
+  border-collapse: collapse; /* Merges double borders into single lines */
+  width: 100%;
+}
+th, td {
+  border: 1px solid black;   /* The actual "line" */
+  padding: 8px;              /* Gives the text some breathing room */
+  text-align: left;
+}
+code { 
+    background-color: #eee; padding: 2px 4px; border-radius: 4px; 
+}
