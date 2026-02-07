@@ -21,13 +21,22 @@ tr:hover {
     background-color: #e9ecef; 
 }
 table {
+  table-layout:fixed;
   border-collapse: collapse; /* Merges double borders into single lines */
   width: 100%;
 }
+/*
+Source - https://stackoverflow.com/a/19185177
+Posted by Avatar, modified by community. See post 'Timeline' for change history
+Retrieved 2026-02-06, License - CC BY-SA 4.0
+*/
 th, td {
   border: 1px solid black;   /* The actual "line" */
   padding: 8px;              /* Gives the text some breathing room */
   text-align: left;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  word-wrap: break-word;
 }
 code { 
     background-color: #eee; padding: 2px 4px; border-radius: 4px; 
