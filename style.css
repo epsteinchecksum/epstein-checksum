@@ -54,3 +54,17 @@ code {
     padding: 2px 4px; 
     border-radius: 4px; 
 }
+a {
+    color: #add8e6; /* Pale blue */
+    text-decoration: none; /* Removes the default underline for a cleaner look */
+    transition: color 0.2s ease; /* Makes the color change smooth */
+}
+
+a:hover {
+    color: #d1e9ff; /* A slightly lighter pale blue when hovering */
+    text-decoration: underline; /* Brings the underline back on hover */
+}
+
+a:visited {
+    color: #b0c4de; /* A muted pale blue for visited links */
+}
