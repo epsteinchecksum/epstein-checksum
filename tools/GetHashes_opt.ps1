@@ -30,14 +30,9 @@ $results = foreach ($file in $files) {
     $timestampUnix = [System.DateTimeOffset]::Now.ToUnixTimeSeconds()
 
     [PSCustomObject]@{
-        "File Name"          = $file.Name
         "Relative Path"      = $relativePath
-        "Size (in bytes)"    = $file.Length
-        "MD5"                = "<code>$((Get-FileHash $file.FullName -Algorithm MD5).Hash)</code>"
         "SHA1"               = "<code>$((Get-FileHash $file.FullName -Algorithm SHA1).Hash)</code>"
         "Checksum UTC Timestamp" = $timestamp
-        "Checksum Unix Timestamp" = $timestampUnix
-        "Checksum Notes"     = $checksumNotes
         "Notes"              = $notes
         "Theoretical DOJ Link" = '<a href='+$($BaseDOJLink + $file.Name)+'>'+$($file.Name)+'</a>'
     }
