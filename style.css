@@ -1,36 +1,72 @@
 body, html {
     height: 100%;
     margin: 10px;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333;
+    background-color: #121212; /* Deep dark background */
+    color: #e0e0e0;            /* Soft white text */
 }
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
+
 h1 {
-    font-size: 5rem; /* Big text */
+    font-size: 5rem;
     font-weight: bold;
+    color: #ffffff;
 }
+
+/* Zebra striping for dark mode */
 tr:nth-child(even) { 
-    background-color: #f2f2f2; 
+    background-color: #1e1e1e; 
 }
+/* Subtle hover effect */
 tr:hover { 
-    background-color: #e9ecef; 
+    background-color: #2c2c2c; 
 }
+
 table {
-  border-collapse: collapse; /* Merges double borders into single lines */
+  table-layout: fixed;
+  border-collapse: collapse;
   width: 100%;
 }
+
+/*
+Source - https://stackoverflow.com/a/19185177
+Posted by Avatar, modified by community. See post 'Timeline' for change history
+Retrieved 2026-02-06, License - CC BY-SA 4.0
+*/
 th, td {
-  border: 1px solid black;   /* The actual "line" */
-  padding: 8px;              /* Gives the text some breathing room */
-  text-align: left;
+  border: 1px solid #444;   /* Lightened border for visibility */
+  padding: 8px;              /* Consistent padding */
+  text-align: left;          /* Left alignment */
+  overflow: hidden;          /* Prevent layout breaks */
+  text-overflow: ellipsis;   /* Handle long text */
+  word-wrap: break-word;     /* Ensure wrapping */
 }
+
 code { 
-    background-color: #eee; padding: 2px 4px; border-radius: 4px; 
+    background-color: #333; 
+    color: #f8f8f2; 
+    padding: 2px 4px; 
+    border-radius: 4px; 
+}
+
+a {
+    color: #add8e6; /* Pale blue */
+    text-decoration: none; /* Removes the default underline for a cleaner look */
+    transition: color 0.2s ease; /* Makes the color change smooth */
+}
+
+a:hover {
+    color: #d1e9ff; /* A slightly lighter pale blue when hovering */
+    text-decoration: underline; /* Brings the underline back on hover */
+}
+
+a:visited {
+    color: #b0c4de; /* A muted pale blue for visited links */
 }
 a {
     color: #add8e6; /* Pale blue */
