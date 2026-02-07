@@ -22,7 +22,6 @@ h1 {
 tr:nth-child(even) { 
     background-color: #1e1e1e; 
 }
-
 /* Subtle hover effect */
 tr:hover { 
     background-color: #2c2c2c; 
@@ -54,6 +53,7 @@ code {
     padding: 2px 4px; 
     border-radius: 4px; 
 }
+
 a {
     color: #add8e6; /* Pale blue */
     text-decoration: none; /* Removes the default underline for a cleaner look */
